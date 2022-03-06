@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>List Sections Exercise | Juan Contreras</title>
+  </head>
+
+  <body class="vertical-100height">
+    <h1 class="center-text padding-h1">List Sections Exercise</h1>
+
+    <section class="horizontal-width vertical-75height">
+      <div class="list-box">
+        <div class="subtitle-alignment center-text padding-div">
+          <h2 class="subtitle-size">Item List #1</h2>
+          <div class="space-between-flex2">
+            <input
+              type="search"
+              oninput="onSearchOnList1()"
+              id="searchBox1"
+              placeholder="Dynamic search keyword.."
+            />
+            <i
+              class="fa fa-trash icons-size2 cursor-pointer"
+              onclick="onEmptyList1()"
+            ></i>
+          </div>
+        </div>
+
+        <form id="newItemForm" class="text-alignment padding-div">
+          <label for="inputBoxAddItem">Add a new item to the list:</label>
+          <input type="text" id="inputBoxAddItem" name="inputBoxAddItem" />
+          <input type="submit" value="Add Item" />
+        </form>
+
+        <div class="ul-box margin-div">
+          <p id="messageList1" class="center-text">
+            This list is empty, please enter a new item.
+          </p>
+          <ul class="list-style" id="itemList1"></ul>
+        </div>
+
+        <div class="text-alignment">
+          <span>Update the selected item from the list:</span>
+          <input type="text" id="inputBoxUpdateItem" disabled />
+          <button id="buttomUpdateItem" onclick="onUpdateItemOnList()" disabled>
+            Update Item
+          </button>
+        </div>
+      </div>
+
+      <div class="list-box">
+        <div class="subtitle-alignment center-text">
+          <h2 class="subtitle-size">Item List #2</h2>
+          <div class="space-between-flex2">
+            <input
+              type="search"
+              oninput="onSearchOnList2()"
+              id="searchBox2"
+              placeholder="Dynamic search keyword.."
+            />
+            <i
+              class="fa fa-trash icons-size2 cursor-pointer"
+              onclick="onEmptyList2()"
+            ></i>
+          </div>
+        </div>
+        <div class="ul-box">
+          <p id="messageList2" class="center-text">
+            This list is empty, please select an item from the List #1.
+          </p>
+          <ul class="list-style" id="itemList2"></ul>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="./js/onAddItemToList1.js"></script>
+    <script type="text/javascript" src="./js/onAddItemToList2.js"></script>
+    <script type="text/javascript" src="./js/onEmptyLists.js"></script>
+    <script type="text/javascript" src="./js/onRemoveItemFromList1.js"></script>
+    <script type="text/javascript" src="./js/onRemoveItemFromList2.js"></script>
+    <script type="text/javascript" src="./js/onReturnItemToList1.js"></script>
+    <script type="text/javascript" src="./js/onSearchOnLists.js"></script>
+    <script type="text/javascript" src="./js/onUpdateItemOnList1.js"></script>
+  </body>
+</html>

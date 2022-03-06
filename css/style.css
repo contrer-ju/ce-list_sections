@@ -1,0 +1,142 @@
+body {
+  background: #292e33;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.vertical-100height {
+  height: 100vh;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal-width {
+  width: 92vw;
+  display: flex;
+  gap: 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.25rem;
+}
+
+.space-between-flex2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.subtitle-alignment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-box {
+  padding: 0.5rem;
+  min-width: 90%;
+  background-color: gray;
+  border: 0.3rem solid #ffc107;
+}
+
+.icons-size {
+  font-size: 1.25rem;
+  padding: 0rem 0.4rem;
+}
+
+.icons-size2 {
+  font-size: 1.7rem;
+  color: #292e33;
+  padding: 0rem 0.4rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.disabled {
+  color: lightgray;
+}
+
+.subtitle-size {
+  font-size: 1.2rem;
+}
+
+.list-style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-alignment {
+  text-align: center;
+}
+
+.dont-show {
+  display: none;
+}
+
+.ul-box {
+  max-height: 23rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.padding-h1 {
+  padding-bottom: 0.25rem;
+}
+
+.padding-div {
+  padding-bottom: 1rem;
+}
+
+.margin-div {
+  margin-bottom: 1rem;
+}
+
+/* Media Query */
+@media (min-width: 420px) {
+  .subtitle-size {
+    font-size: 1.5rem;
+  }
+  .list-box {
+    padding: 1rem;
+    min-width: 40%;
+  }
+}
+
+@media (min-width: 769px) {
+  .horizontal-width {
+    max-width: 1320px;
+    flex-direction: row;
+  }
+  .subtitle-alignment {
+    gap: 15%;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .text-alignment {
+    text-align: start;
+  }
+  .space-between-flex2 {
+    width: 54%;
+  }
+  .padding-h1 {
+    padding-bottom: 1.25rem;
+  }
+}
